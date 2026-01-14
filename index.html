@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    显示本地图片</>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000; /* 可选：黑底更突出图片 */
+    }
+    img {
+      max-width: 100vw;
+      max-height: 100vh;
+      object-fit: contain; /* 保持宽高比，完整显示图片 */
+    }
+  </style>
 </head>
 <body>
-    <h1>我的图片</h1>
-    <img src="ewe.jpg" alt="ewe 图片" style="max-width: 100%; height: auto;">
+  <img src="a.jpg" alt="">
 </body>
 </html>
